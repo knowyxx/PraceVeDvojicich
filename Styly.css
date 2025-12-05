@@ -1,0 +1,33 @@
+body {font-size: 15px;font-family: Roboto}
+.container {width:1440px;margin:0 auto;position:relative;border:1px solid red;} /* */
+section.container {min-height:963px} 
+.topnav {display:flex;min-height:30px;background:#33292a;justify-content:center}
+.topnav li {list-style-type: none;font-size:30px;border-right:1px solid blue;padding:0 5px}
+.topnav li a:hover {color: lightblue}
+.topnav li a {color:white;text-decoration:none}
+a.icon {display:none}
+
+.sec1 {background: url("img/scott-goodwill.jpg") 50% 50%;}
+.container-text {width:340px;text-align:right;bottom:11vh;right:10vw;position:absolute;}
+
+h1 {font-size:76px;color: white}
+
+@media screen and (width <= 768px) { /* w:390px */
+  .container {width:100%}
+  
+  .topnav {
+  /*display: none;*/
+    }
+
+    a.icon {display:block}
+}
+
+@media screen and (width <= 992px) { /* w:390px */
+  .container {width:100%}
+  
+  .topnav {
+  /*display: none;*/
+    }
+
+    a.icon {display:block}
+}
