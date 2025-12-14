@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <title>Your Travel Assistant</title>
     <meta charset='utf-8'>
@@ -11,15 +12,44 @@
     <link rel="stylesheet" href="Styly.css">
 
   </head>
+
   <body>
+
   <nav class="header-nav">
-  <ul class="topnav">
+  <ul class="topnav-desktop">
     <li><a href="#about">About Us</a></li>
     <li><a href="#whatwedo">What We Do</a></li>
     <li><a href="#trips">Our Trips</a></li>
     <li><a href="#where">Where to go</a></li>
     <li><a href="#reviews">Reviews</a></li>
   </ul>
+
+  <div class="topnav">
+    <div id="myLinks">
+      <a href="#about">About Us</a>
+      <a href="#whatwedo">What We Do</a>
+      <a href="#trips">Our Trips</a>
+      <a href="#where">Where to go</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+
 </nav>
 
   <section class="container sec1" id="sec1">
@@ -43,7 +73,7 @@
 
   <section class="container-whatwedo" id="whatwedo">
     <div class="whatwedo-text">
-      <h1 style="font-size: 30px;">What We Do</h1>
+      <h1 class="whatwedo-title">What We Do</h1>
       <p>Opportunities for challenging hikes and pleasant strolls are scattered all over this planet; you just need to know where to find them. We do. Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out there, waiting for you to walk all over them. We’re proud of our record of successful ascents (over 92% of our travellers make it to the top of Kili, depending on the route), but it’s our CEOs and local guides that make the journey itself as memorable as the summit. And if you’re not into big climbs, don’t sweat it; we’ve got loads of lower-impact walks and iconic treks you’ll love, too.</p>
     </div>
     <div class="whatwedo-flex">
